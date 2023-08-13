@@ -9,9 +9,9 @@
 ### Current Features
 | Feature-Name | Feature-Description | Feature-Hotkey
 |--|--|--|
-| Always Restore Health | Automatically restores the health of your team | NUMPAD 0
-| Always Restore AP| Automatically restores the AP of your player | NUMPAD 1
-| Increase XP | Increases the xp of your player by 2500 | NUMPAD 2
+| Always Restore Health | Automatically restores the health of your team | NUMPAD 1
+| Always Restore AP| Automatically restores the AP of your player | NUMPAD 2
+| Increase XP | Increases the xp of your player by 2500 | NUMPAD 3
 | Give Any Item | Fills your whole bag of the specified item, needs the item id, which can be found in `structs.hpp` | NUMPAD 4
 | Stat-Booster| Changes the ATK/SATK/DEF/SDEF of your player to 242 and maxes your IQ | NUMPAD 5
 | Add money| Increases your money by 1500 | NUMPAD 6
