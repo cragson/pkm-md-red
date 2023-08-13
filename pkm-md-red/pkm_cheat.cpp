@@ -1,8 +1,12 @@
 #include "pkm_cheat.hpp"
 
+#include "ft_dungeon_skipper.hpp"
 #include "ft_increase_xp.hpp"
+#include "ft_inventory.hpp"
+#include "ft_money.hpp"
 #include "ft_restore_ap.hpp"
 #include "ft_restore_health.hpp"
+#include "ft_stat_booster.hpp"
 #include "globals.hpp"
 #include "utils.hpp"
 
@@ -20,23 +24,55 @@ bool pkm_cheat::setup_features()
 	health->set_print_status( true );
 	health->set_name( L"Always Restore Health" );
 
-	auto xp = std::make_unique< ft_increase_xp >();
-	xp->disable_drawing();
-	xp->set_activation_delay( 420 );
-	xp->set_virtual_key_code( VK_NUMPAD2 );
-	xp->set_print_status( false );
-	xp->set_name( L"Increase XP" );
-
 	auto ap = std::make_unique< ft_restore_ap >();
 	ap->disable_drawing();
 	ap->set_activation_delay( 420 );
-	ap->set_virtual_key_code( VK_NUMPAD3 );
+	ap->set_virtual_key_code( VK_NUMPAD2 );
 	ap->set_print_status( true );
 	ap->set_name( L"Always Restore AP" );
+
+	auto xp = std::make_unique< ft_increase_xp >();
+	xp->disable_drawing();
+	xp->set_activation_delay( 420 );
+	xp->set_virtual_key_code( VK_NUMPAD3 );
+	xp->set_print_status( false );
+	xp->set_name( L"Increase XP" );
+
+	auto inv = std::make_unique< ft_inventory >();
+	inv->disable_drawing();
+	inv->set_activation_delay( 420 );
+	inv->set_virtual_key_code( VK_NUMPAD4 );
+	inv->set_print_status( false );
+	inv->set_name( L"Give Any Item" );
+
+	auto bst = std::make_unique< ft_stat_booster >();
+	bst->disable_drawing();
+	bst->set_activation_delay( 420 );
+	bst->set_virtual_key_code( VK_NUMPAD5 );
+	bst->set_print_status( false );
+	bst->set_name( L"Stat-Booster" );
+
+	auto money = std::make_unique< ft_money >();
+	money->disable_drawing();
+	money->set_activation_delay( 420 );
+	money->set_virtual_key_code( VK_NUMPAD6 );
+	money->set_print_status( false );
+	money->set_name( L"Add money" );
+
+	auto skp = std::make_unique< ft_dungeon_skipper >();
+	skp->disable_drawing();
+	skp->set_activation_delay( 420 );
+	skp->set_virtual_key_code( VK_NUMPAD7 );
+	skp->set_print_status( false );
+	skp->set_name( L"Dungeon Skipper" );
 
 	this->m_features.push_back( std::move( health ) );
 	this->m_features.push_back( std::move( xp ) );
 	this->m_features.push_back( std::move( ap ) );
+	this->m_features.push_back( std::move( inv ) );
+	this->m_features.push_back( std::move( bst ) );
+	this->m_features.push_back( std::move( money ) );
+	this->m_features.push_back( std::move( skp ) );
 
 	return true;
 }

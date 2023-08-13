@@ -112,7 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,7 +127,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,9 +137,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ft_dungeon_skipper.cpp" />
     <ClCompile Include="ft_increase_xp.cpp" />
+    <ClCompile Include="ft_inventory.cpp" />
+    <ClCompile Include="ft_money.cpp" />
     <ClCompile Include="ft_restore_ap.cpp" />
     <ClCompile Include="ft_restore_health.cpp" />
+    <ClCompile Include="ft_stat_booster.cpp" />
     <ClCompile Include="mgba\mgba-api\mgba_api.cpp" />
     <ClCompile Include="mgba_api.cpp" />
     <ClCompile Include="osmium\Memory\Hook\hook.cpp" />
@@ -153,9 +157,13 @@
     <ClCompile Include="pkm_cheat.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ft_dungeon_skipper.hpp" />
     <ClInclude Include="ft_increase_xp.hpp" />
+    <ClInclude Include="ft_inventory.hpp" />
+    <ClInclude Include="ft_money.hpp" />
     <ClInclude Include="ft_restore_ap.hpp" />
     <ClInclude Include="ft_restore_health.hpp" />
+    <ClInclude Include="ft_stat_booster.hpp" />
     <ClInclude Include="globals.hpp" />
     <ClInclude Include="mgba\mgba-api\mgba_api.hpp" />
     <ClInclude Include="mgba\mgba-api\mgba_constants.hpp" />
@@ -175,6 +183,7 @@
     <ClInclude Include="osmium\Testing\test_cheat.hpp" />
     <ClInclude Include="osmium\Testing\test_overlay.hpp" />
     <ClInclude Include="pkm_cheat.hpp" />
+    <ClInclude Include="structs.hpp" />
     <ClInclude Include="utils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

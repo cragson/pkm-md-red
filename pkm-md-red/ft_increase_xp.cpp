@@ -5,9 +5,9 @@
 
 void ft_increase_xp::tick()
 {
-	const auto current_xp = Globals::g_pAPI->read16( Offsets::first_pkm_experience );
+	const auto current_xp = Globals::g_pAPI->read16( Offsets::player_experience );
 
-	Globals::g_pAPI->write16( Offsets::first_pkm_experience, current_xp + 250 );
+	Globals::g_pAPI->write16( Offsets::player_experience, current_xp + 2500 );
 
 	Sleep( 250 );
 

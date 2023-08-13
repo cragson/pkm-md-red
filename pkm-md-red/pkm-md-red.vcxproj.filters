@@ -15,7 +15,13 @@
     <Filter Include="mgba-api">
       <UniqueIdentifier>{34d7a2a4-aa2d-4338-8eaf-e2d6469184b7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="files\features">
+    <Filter Include="files\sdk">
+      <UniqueIdentifier>{3f96dbd1-be14-41d1-9692-0480cb704fbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="files\cheat">
+      <UniqueIdentifier>{e86e740a-06d3-4f88-8022-c89d59009604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="files\cheat\features">
       <UniqueIdentifier>{034b8f6c-da28-4ba7-9106-9af880db5b44}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -50,17 +56,29 @@
     <ClCompile Include="mgba\mgba-api\mgba_api.cpp">
       <Filter>mgba-api</Filter>
     </ClCompile>
-    <ClCompile Include="pkm_cheat.cpp">
-      <Filter>files</Filter>
-    </ClCompile>
     <ClCompile Include="ft_restore_health.cpp">
-      <Filter>files\features</Filter>
+      <Filter>files\cheat\features</Filter>
     </ClCompile>
     <ClCompile Include="ft_increase_xp.cpp">
-      <Filter>files\features</Filter>
+      <Filter>files\cheat\features</Filter>
     </ClCompile>
     <ClCompile Include="ft_restore_ap.cpp">
-      <Filter>files\features</Filter>
+      <Filter>files\cheat\features</Filter>
+    </ClCompile>
+    <ClCompile Include="pkm_cheat.cpp">
+      <Filter>files\cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_inventory.cpp">
+      <Filter>files\cheat\features</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_stat_booster.cpp">
+      <Filter>files\cheat\features</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_money.cpp">
+      <Filter>files\cheat\features</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_dungeon_skipper.cpp">
+      <Filter>files\cheat\features</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -112,26 +130,41 @@
     <ClInclude Include="mgba\mgba-api\mgba_constants.hpp">
       <Filter>mgba-api</Filter>
     </ClInclude>
-    <ClInclude Include="pkm_cheat.hpp">
-      <Filter>files</Filter>
-    </ClInclude>
-    <ClInclude Include="globals.hpp">
-      <Filter>files</Filter>
-    </ClInclude>
-    <ClInclude Include="utils.hpp">
-      <Filter>files</Filter>
-    </ClInclude>
     <ClInclude Include="ft_restore_health.hpp">
-      <Filter>files\features</Filter>
-    </ClInclude>
-    <ClInclude Include="offsets.hpp">
-      <Filter>files</Filter>
+      <Filter>files\cheat\features</Filter>
     </ClInclude>
     <ClInclude Include="ft_increase_xp.hpp">
-      <Filter>files\features</Filter>
+      <Filter>files\cheat\features</Filter>
     </ClInclude>
     <ClInclude Include="ft_restore_ap.hpp">
-      <Filter>files\features</Filter>
+      <Filter>files\cheat\features</Filter>
+    </ClInclude>
+    <ClInclude Include="offsets.hpp">
+      <Filter>files\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.hpp">
+      <Filter>files\cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp">
+      <Filter>files\cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="pkm_cheat.hpp">
+      <Filter>files\cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.hpp">
+      <Filter>files\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="ft_inventory.hpp">
+      <Filter>files\cheat\features</Filter>
+    </ClInclude>
+    <ClInclude Include="ft_stat_booster.hpp">
+      <Filter>files\cheat\features</Filter>
+    </ClInclude>
+    <ClInclude Include="ft_money.hpp">
+      <Filter>files\cheat\features</Filter>
+    </ClInclude>
+    <ClInclude Include="ft_dungeon_skipper.hpp">
+      <Filter>files\cheat\features</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
