@@ -1,0 +1,6 @@
+[submodule "pkm-md-red/mgba"]
+	path = pkm-md-red/mgba
+	url = git@github.com:cragson/mgba-api
+[submodule "pkm-md-red/osmium"]
+	path = pkm-md-red/osmium
+	url = git@github.com:cragson/osmium
